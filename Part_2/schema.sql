@@ -1,0 +1,22 @@
+CREATE TABLE leads (
+    lead_id                     TEXT PRIMARY KEY,
+    created_at                  TIMESTAMP,
+    source                      TEXT,
+    city                        TEXT,
+    area                        TEXT,
+    property_type               TEXT,
+    budget_pkr_lac              REAL,
+    bedrooms                    INTEGER,
+    first_response_minutes      INTEGER,
+    calls_made                  INTEGER,
+    total_call_seconds          INTEGER,
+    whatsapp_replies            INTEGER,
+    site_visits                 INTEGER,
+    agent_experience_years      REAL,
+    is_overseas                 INTEGER DEFAULT 0,
+    referred_by_existing_client INTEGER DEFAULT 0,
+    has_financing_approved      INTEGER DEFAULT 0,
+    token_amount_received_pkr   REAL DEFAULT 0,
+    crm_record_hash             TEXT UNIQUE,  
+    converted                   INTEGER DEFAULT 0
+);
