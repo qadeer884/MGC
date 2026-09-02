@@ -38,7 +38,7 @@ It consists of four parts, each tackling a real business problem:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/qadeer884/MGC
 cd <repo-folder>
 ```
 
@@ -100,7 +100,7 @@ The document assistant uses Retrieval-Augmented Generation (RAG) to answer quest
 ```text
 Documents
     ↓
-Markdown loading
+Data loading
     ↓
 MarkdownHeaderTextSplitter
     ↓
